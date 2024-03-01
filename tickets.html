@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tickets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <a href="index.html"> <img src="./images/Rectangle 15 (Traced).png" alt=""></a>
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <LI>
+                        <a href="movies.html">MOVIES</a>
+                    </LI>
+                    <LI>
+                        <a href="tickets.html">TICKETS</a>
+                    </LI>
+                    <li>
+                        <a href="contacts.html">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <main class="tickets">
+        <hr>
+        <h1> Buy tickets</h1>
+        <form class="needs-validation" novalidate>
+            <div class=" mb-3 mx-auto">
+                <label for="validationCustom01" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3 mx-auto">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 mx-auto">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="mb-3 mx-auto">
+                <label for="validationCustom04" class="form-label">Movie</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>ICE3</option>
+                    <option>Inside Out</option>
+                    <option >Avatar 3</option>
+                    <option > The Hunger Games</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="mb-3 mx-auto" >
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                     I am over sixteen years old
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-warning" type="submit">Buy</button>
+            </div>
+        </form>
+
+
+
+
+    </main>
+    <footer>
+        <a href="index.html"><img src="./images/Rectangle 15 (Traced).png" alt=""></a>
+        <div class="icons">
+            <a target="_blank" href="https://vk.com/miragecinema"><img  class="vk"  src="./images/Vector.png" alt=""></a>
+            <a  target="_blank" href="https://www.facebook.com/groups/234228666717593/"><img src="./images/ic_baseline-facebook.png" alt=""></a>
+            <a  target="_blank" href="https://www.youtube.com/@KinoKillerReviews"><img src="./images/mdi_youtube.png" alt=""></a>
+           </div>
+           
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script>
+            var menu = document.getElementById('menu');
+            function showMenu(){
+                menu.style.right = '0';
+            }
+            function hideMenu(){
+                menu.style.right = '-200px'
+            }
+        </script>
+        
+</body>
+
+</html>
